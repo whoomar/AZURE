@@ -49,3 +49,4 @@ az network vnet peering create \
   --vnet-name "Financial_department" \
   --remote-vnet "$(az network vnet show --name "IT_department" --resource-group Vnet_Project --query id -o tsv)" \
   --allow-vnet-access
+#make sure that the firewall is disabled on the two vm !!!!!!
