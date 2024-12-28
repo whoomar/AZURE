@@ -14,23 +14,23 @@ az network vnet create -g Vnet_Project -n "Financial_department" \
 
 az vm create -l eastus \
 --image MicrosoftWindowsServer:WindowsServer:2019-datacenter-gensecond:latest \
--g Vnet_Project -n VM_N1 --size Standard_D2d_v5 \
+-g Vnet_Project -n VM_N1 \
 --authentication-type password  --admin-username AZURE \
---admin-password AzureMaroc@2024 --vnet-name "IT department" --subnet Subnet1  
+--admin-password "AzureMaroc@2024" --vnet-name "IT_department" --subnet Subnet1  
 
 
 az vm create -l eastus \
 --image MicrosoftWindowsServer:WindowsServer:2019-datacenter-gensecond:latest \
 -g Vnet_Project -n VM_N2 \
 --authentication-type password  --admin-username AZURE \
---admin-password AzureMaroc@2024 --vnet-name "IT_department" --subnet Subnet2
+--admin-password "AzureMaroc@2024" --vnet-name "IT_department" --subnet Subnet2
 
 
 az vm create -l eastus \
 --image MicrosoftWindowsServer:WindowsServer:2019-datacenter-gensecond:latest \
 -g Vnet_Project -n VM_N3 \
 --authentication-type password  --admin-username AZURE \
---admin-password AzureMaroc@2024 --vnet-name "Financial_department" --subnet Sub1
+--admin-password "AzureMaroc@2024" --vnet-name "Financial_department" --subnet Sub1
 
 
 
