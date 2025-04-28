@@ -23,7 +23,7 @@ az network vnet-gateway create -g Project_2 -n gateway \
 --gateway-type Vpn --sku VpnGw1 --vpn-type RouteBased
 
 
-az network vnet-gateway update -g Project_2 -n VPNgateway \
+az network vnet-gateway update -g Project_2 -n gateway \
   --address-prefixes 192.168.1.0/24
 
 
