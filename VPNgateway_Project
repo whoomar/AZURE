@@ -36,9 +36,14 @@ New-SelfSignedCertificate -Type Custom -DnsName P2SChildCert -KeySpec Signature 
 
 #HOW TO ADD CERT
 
-https://youtu.be/c5FoAPwwQCA?si=sxba47W9uI83HBHt
+https://www.youtube.com/watch?v=NUDgBsDGv30&t=56s
 
 #Error Connecting To VPN Connection 
 https://youtu.be/c5FoAPwwQCA?si=sxba47W9uI83HBHt
 
-#You should disable the firewall on the VM (for ping purpose)
+
+#(for ping purpose)
+
+#You should disable the firewall on the VM 
+# allow icmp ==> NSG
+#You should disable the firewall on the PHYSICAL MACHINE
